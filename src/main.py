@@ -3,13 +3,11 @@ from dotenv import load_dotenv
 
 from services.robo import RoboService
 
-roboService = RoboService()
-
-
 load_dotenv()
-
 langchainKey = os.getenv("LANGCHAIN_API_KEY")
 openaiKey = os.getenv("OPENAI_API_KEY")
+
+roboService = RoboService()
 
 agent_finished = False
 
